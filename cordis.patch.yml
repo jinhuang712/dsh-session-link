@@ -1,0 +1,4 @@
+# dsh-session-link bundle：向组合挂载会话链接（Host session_read 工具 + Client header 复制按钮/@ 引用源/chip 上色）
+- insert:
+    - id: dsh-session-link
+      name: 'dsh-session-link'

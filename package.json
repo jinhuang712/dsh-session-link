@@ -1,0 +1,71 @@
+{
+  "name": "dsh-session-link",
+  "description": "Session reference plugin for DeepSeek Harness: one-click copy of the current session's @session-id reference in the header, an @ mention menu that lists sessions by title, and a session_read tool that reads any local session by @session-id / dsh-session:URI / @title and projects it to readable conversation text — no more download-transfer-unzip to share context between sessions.",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/jinhuang712/dsh-session-link#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinhuang712/dsh-session-link.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinhuang712/dsh-session-link/issues"
+  },
+  "main": "lib/index.mjs",
+  "files": [
+    "lib",
+    "src",
+    "skills",
+    "cordis.patch.yml",
+    "AGENTS.md"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "prepublishOnly": "node build.mjs"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.mjs"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    },
+    "skills": [
+      "./skills/dsh-session-link/SKILL.md"
+    ]
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "cordis": "^4.0.0-rc.7",
+    "react": "^18.2.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "session-link",
+    "cross-session",
+    "context-sharing",
+    "ai-agent",
+    "llm-tools",
+    "agent-memory",
+    "tool-calling"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
