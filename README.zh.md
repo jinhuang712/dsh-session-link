@@ -90,7 +90,6 @@ session_read({ "link": "@session-7fc2d98e-…" })
   - `runtime.js` 从 loader 的 `require` 绑定宿主 React — 从不打包，插件与宿主共享同一 React 实例
   - `copy-button.js` header 按钮；`mention.js` `@` 引用源；`chips.js` MutationObserver 上色
 - **Skill**（`skills/dsh-session-link/SKILL.md`）：随安装注册的用法指南
-- **`docs/`**：设计过程存档（中文）— 实证记录、边界测量与被否决的备选方案
 
 ### 开发
 

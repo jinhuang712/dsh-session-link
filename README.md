@@ -109,8 +109,6 @@ Optional: `maxChars` (projection budget, default 64000), `truncate`
   - `copy-button.js` the header action; `mention.js` the `@` session source;
     `chips.js` the MutationObserver repaint
 - **Skill** (`skills/dsh-session-link/SKILL.md`): usage guide shipped with the install
-- **`docs/`**: the design history (Chinese) — evidence runs, boundary
-  measurements, and the alternatives that were rejected
 
 ### Develop
 

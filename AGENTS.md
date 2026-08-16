@@ -59,8 +59,6 @@ title.
 - `lib/client.js` — built artifact, committed so installing from GitHub needs
   no build step. Edit `src/`, never this file.
 - `skills/dsh-session-link/` — usage guide shipped with the install
-- `docs/` — design history in Chinese (evidence, boundaries, alternatives);
-  paths and names there are historical
 
 Run `pnpm build` after any change under `src/`, and commit the rebuilt
 `lib/client.js` and `lib/client.js.map` alongside it.
