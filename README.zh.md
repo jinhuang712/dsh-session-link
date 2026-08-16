@@ -29,6 +29,16 @@
 - **chip 上色** — `@session-…` 引用在气泡里蓝底白字，精确作用域，不影响其他 `@` 提及。
 - **`session_read` 工具** — 模型解析 `@session-<uuid>` / `dsh-session:` URI / `@标题`，得到 `{ sessionId, title, cwd, logPath, seqRange, transcript, truncated }`。只读、live 优先、沙箱会话可用。
 
+## 界面预览
+
+**复制** — 会话 header 一键复制 `@session-<uuid>`：
+
+<img src="assets/copy.gif" alt="header 一键复制会话引用" width="720">
+
+**粘贴** — 引用粘进另一个会话的输入框即为 chip，发送即可读取：
+
+<img src="assets/paste.gif" alt="粘贴会话引用显示为 chip" width="720">
+
 ## 安装
 
 钉在某个 release 上装。构建产物已入库，装的时候不编译、也不经过任何 registry：

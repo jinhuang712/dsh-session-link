@@ -29,6 +29,16 @@ Pass context between DSH sessions without the download–transfer–unzip dance.
 - **Chip repaint** — `@session-…` references show blue-on-white in sent bubbles, scoped precisely so other `@` mentions are never touched.
 - **`session_read` tool** — the model resolves `@session-<uuid>`, a `dsh-session:` URI, or `@title` and receives `{ sessionId, title, cwd, logPath, seqRange, transcript, truncated }`. Read-only, live-first, works for sandboxed sessions too.
 
+## Preview
+
+**Copy** — one click in the session header puts `@session-<uuid>` on the clipboard:
+
+<img src="assets/copy.gif" alt="Copying a session reference from the header" width="720">
+
+**Paste** — the reference lands in another session's composer as a chip, ready to send and read:
+
+<img src="assets/paste.gif" alt="Pasting the session reference as a chip" width="720">
+
 ## Install
 
 Pinned to a release — build artifacts are committed, so there is nothing to
